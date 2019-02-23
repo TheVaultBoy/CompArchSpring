@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<VisualStudioProject
+	ProjectType="Intel C++ Project"
+	Version="11.0"
+	Name="Play WAV"
+	ProjectGUID="{DF1B3A5E-6E73-4ADD-BDC5-699D8A188C26}"
+	VCNestedProjectGUID="{20199BE3-E587-4C16-AB1C-528E86985BD0}"
+	VCNestedProjectFileName="Play WAV.vcproj">
+	<Configurations/>
+	<Files/>
+</VisualStudioProject>

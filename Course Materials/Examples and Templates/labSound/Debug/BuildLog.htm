@@ -1,0 +1,36 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: labSound, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\USERs\Молодяков\labSound\Debug\RSP000001.rsp" with contents
+[
+/OUT:"Debug/labSound.exe" /INCREMENTAL /NOLOGO /DEBUG /PDB:"Debug/labSound.pdb" /SUBSYSTEM:CONSOLE /MACHINE:X86 comctl32.lib dxerr8.lib winmm.lib dsound.lib dxguid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+.\Debug\labSound.obj
+.\Debug\stdafx.obj
+]
+Creating command line "link.exe @c:\USERs\Молодяков\labSound\Debug\RSP000001.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Linking...
+labSound.obj : error LNK2019: unresolved external symbol "public: long __thiscall CSound::Stop(void)" (?Stop@CSound@@QAEJXZ) referenced in function _main
+labSound.obj : error LNK2019: unresolved external symbol "public: long __thiscall CSound::Play(unsigned long,unsigned long)" (?Play@CSound@@QAEJKK@Z) referenced in function _main
+labSound.obj : error LNK2019: unresolved external symbol "public: long __thiscall CSoundManager::Create(class CSound * *,char *,unsigned long,struct _GUID,unsigned long)" (?Create@CSoundManager@@QAEJPAPAVCSound@@PADKU_GUID@@K@Z) referenced in function _main
+labSound.obj : error LNK2019: unresolved external symbol "public: long __thiscall CSoundManager::Initialize(struct HWND__ *,unsigned long,unsigned long,unsigned long,unsigned long)" (?Initialize@CSoundManager@@QAEJPAUHWND__@@KKKK@Z) referenced in function _main
+labSound.obj : error LNK2019: unresolved external symbol "public: __thiscall CSoundManager::CSoundManager(void)" (??0CSoundManager@@QAE@XZ) referenced in function _main
+labSound.obj : error LNK2019: unresolved external symbol "public: __thiscall CSoundManager::~CSoundManager(void)" (??1CSoundManager@@QAE@XZ) referenced in function "public: void * __thiscall CSoundManager::`scalar deleting destructor'(unsigned int)" (??_GCSoundManager@@QAEPAXI@Z)
+Debug/labSound.exe : fatal error LNK1120: 6 unresolved externals
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\USERs\Молодяков\labSound\Debug\BuildLog.htm"
+labSound - 7 error(s), 0 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

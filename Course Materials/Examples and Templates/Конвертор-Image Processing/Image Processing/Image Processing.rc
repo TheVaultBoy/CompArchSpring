@@ -1,0 +1,259 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// русский resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\ImageProcessing.rc2""  // ресурсы, не редактируемые в Microsoft Visual C++\r\n"
+    "#include ""l.RUS\\afxres.rc""      // Стандартные компоненты\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Image Processing.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IMAGEPROCESSING_DIALOG DIALOGEX 0, 0, 400, 300
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Image Processing"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IMAGE_BOX,"Static",SS_BLACKFRAME | SS_NOTIFY,7,7,386,200
+    CONTROL         "",IDC_MENU,"SysTabControl32",0x0,7,208,386,85
+END
+
+IDD_MENU_PAGE1 DIALOGEX 0, 0, 386, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Open Image",IDC_BUTTON_OPEN,7,8,90,25,BS_NOTIFY
+    PUSHBUTTON      "Save Image",IDC_BUTTON_SAVE,7,34,90,24,BS_NOTIFY | WS_DISABLED
+    PUSHBUTTON      "Reload Image",IDC_BUTTON_RELOAD,98,8,90,25,BS_NOTIFY | WS_DISABLED
+    LTEXT           "Студент: Савин А. М. 2084/2",IDC_STATIC,271,41,104,8
+    LTEXT           "Преподаватель: Молодяков С. А.",IDC_STATIC,257,50,117,8
+END
+
+IDD_MENU_PAGE2 DIALOGEX 0, 0, 374, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_PIXEL_FILTERS,7,7,80,51,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PF_P1,89,7,70,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PF_P2,89,25,70,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_PF_P3,89,43,70,15,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Apply Filter",IDC_BUTTON_PF_APPLY,307,43,60,15,WS_DISABLED
+END
+
+IDD_MENU_PAGE3 DIALOGEX 0, 0, 374, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CF_M10,176,43,25,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CF_M11,208,43,25,15,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Apply Filter",IDC_BUTTON_CF_APPLY,307,43,60,15,WS_DISABLED
+    LTEXT           "+",IDC_STATIC,201,46,7,8
+    LTEXT           "/",IDC_STATIC,169,46,7,8
+    EDITTEXT        IDC_CF_M9,142,43,25,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CF_M8,116,43,25,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CF_M7,90,43,25,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CF_M6,142,25,25,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CF_M5,116,25,25,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CF_M4,90,25,25,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CF_M3,142,7,25,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CF_M2,116,7,25,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CF_M1,90,7,25,15,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         IDC_CONVOLUTION_FILTERS,7,7,80,51,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MENU_PAGE4 DIALOGEX 0, 0, 374, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Apply Filter",IDC_BUTTON_DF_APPLY,307,43,60,15,WS_DISABLED
+    LISTBOX         IDC_DISPLACEMENT_FILTERS,7,7,80,51,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DF_P1,90,7,70,15,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Horizontal",IDC_DF_P2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,23,48,10
+    CONTROL         "Vertical",IDC_DF_P3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,34,39,10
+    CONTROL         "Grid",IDC_DF_P4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,45,29,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904e3"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Название организации>"
+            VALUE "FileDescription", "TODO: <Описание файла>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Image Processing.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Название организации>. Все права защищены."
+            VALUE "OriginalFilename", "Image Processing.exe"
+            VALUE "ProductName", "TODO: <Название продукта>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1251
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_IMAGEPROCESSING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_MENU_PAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_MENU_PAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_MENU_PAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_MENU_PAGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // русский resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\ImageProcessing.rc2"  // ресурсы, не редактируемые в Microsoft Visual C++
+#include "l.RUS\afxres.rc"      // Стандартные компоненты
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

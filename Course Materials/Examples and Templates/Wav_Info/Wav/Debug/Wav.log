@@ -1,0 +1,9 @@
+﻿  main.cpp
+e:\cwm\wav_mb\wav\main.cpp(8): warning C4200: нестандартное расширение: массив нулевого размера в структуре (объединении)
+  e:\cwm\wav_mb\wav\main.cpp(8): note: Этот член будет пропущен конструктором, установленным по умолчанию, или оператором назначения копии или перемещения
+e:\cwm\wav_mb\wav\main.cpp(26): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+e:\cwm\wav_mb\wav\main.cpp(135): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+  Wav.vcxproj -> E:\CWM\Wav_MB\Debug\Wav.exe
+  Wav.vcxproj -> E:\CWM\Wav_MB\Debug\Wav.pdb (Partial PDB)

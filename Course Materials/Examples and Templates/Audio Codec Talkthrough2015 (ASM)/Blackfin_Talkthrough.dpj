@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding='ISO-8859-1'?>
+<visualdsp-project schema="17" name="Blackfin_Talkthrough" file="Blackfin_Talkthrough.dpj" version="1">
+	<!-- Project build target -->
+	<target>
+		<processor revision="Automatic">ADSP-BF535</processor>
+		<extension>.dxe</extension>
+		<type>Executable file</type>
+	</target>
+	<!-- Configurations -->
+	<configurations active="Debug">
+		<configuration name="Debug">
+			<intermediate-dir>.\Debug</intermediate-dir>
+			<output-dir>.\Debug</output-dir>
+			<changed-property-page-flags>0</changed-property-page-flags>
+			<tools>
+				<tool type="Compiler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Assembler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Linker">
+					<option><![CDATA[|-Version>4.5]]></option>
+				</tool>
+				<tool type="Archiver">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Loader">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="VdkGen">
+					<option><![CDATA[]]></option>
+				</tool>
+			</tools>
+		</configuration>
+		<configuration name="Release">
+			<intermediate-dir>.\Release</intermediate-dir>
+			<output-dir>.\Release</output-dir>
+			<changed-property-page-flags>0</changed-property-page-flags>
+			<tools>
+				<tool type="Compiler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Assembler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Linker">
+					<option><![CDATA[|-Version>4.5]]></option>
+				</tool>
+				<tool type="Archiver">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Loader">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="VdkGen">
+					<option><![CDATA[]]></option>
+				</tool>
+			</tools>
+		</configuration>
+	</configurations>
+	<!-- Project folders -->
+	<folders>
+		<folder name="Header Files" ext=".h,.hpp,.hxx">
+		</folder>
+		<folder name="Linker Files" ext=".ldf,.dlb">
+		</folder>
+		<folder name="Source Files" ext=".c,.cpp,.cxx,.asm,.dsp,.s">
+			<files>
+				<file name=".\AD1885_Init.asm">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+				<file name=".\BF535_EZKIT_TALKTHROUGH.asm">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+				<file name=".\Processing_ISR.asm">
+					<file-configurations>
+						<file-configuration name="Debug">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Debug</intermediate-dir>
+							<output-dir>.\Debug</output-dir>
+						</file-configuration>
+						<file-configuration name="Release">
+							<excluded-flag value="no"/>
+							<build-with-flag value="project"/>
+							<intermediate-dir>.\Release</intermediate-dir>
+							<output-dir>.\Release</output-dir>
+						</file-configuration>
+					</file-configurations>
+				</file>
+			</files>
+		</folder>
+	</folders>
+	<!-- Files under root directly -->
+	<files>
+		<file name=".\readme.txt">
+		</file>
+	</files>
+	<!-- System Builder Components -->
+	<system-builder-component-tables>
+		<system-builder-plugin name="Startup Code Wizard" version="2.0">
+			<system-builder-component name="Project Options">
+				<property name="Compiler Multicore"><![CDATA[False]]></property>
+				<property name="Configuration"><![CDATA[Debug]]></property>
+				<property name="Intermediate Directory"><![CDATA[.\Debug]]></property>
+				<property name="Linker Multicore"><![CDATA[False]]></property>
+				<property name="Name"><![CDATA[Blackfin_Talkthrough]]></property>
+				<property name="Silicon Revision"><![CDATA[Automatic]]></property>
+			</system-builder-component>
+		</system-builder-plugin>
+	</system-builder-component-tables>
+</visualdsp-project>

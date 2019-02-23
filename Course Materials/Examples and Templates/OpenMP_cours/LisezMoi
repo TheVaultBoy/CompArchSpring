@@ -1,0 +1,44 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! exemples du cours OpenMP de l'IDRIS  6/12/2004            !
+!		                                            !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Compilation:
+Prise en compte des Balises OpenmP :
+	ifort -openmp cours_exX.f90 (X numero exemple)
+	icc -openmp cours_exX.c
+Sans pricxe en compte des Balises:
+	ifort -openmp_stubs cours_exX.f90 
+	icc -openmp_stubs cours_exX.c
+
+Execution :
+	export(setenv) OMP_NUM_THREADS=Y( Y)! Nbre de procs: Y
+	./a.out
+
+Exemples
+
+cours_ex1.f90	: definition d'une région Parallele
+(cours_ex1.c)  
+
+cours_ex2.f90	: Statut des variables cas PRIVATE
+(cours_ex2.c)  
+
+cours_ex3.f90	: Statut des variables cas FIRSTPRIVATE
+(cours_ex3.c)  
+
+cours_ex4.f90	: Etendue d'une region parallele
+(cours_ex4.c)  
+
+cours_ex5.f90	: Etendue d'une region parallele et statut des variables
+(cours_ex5.c)  
+
+cours_ex6.f90	: Etendue d'une region parallele et statut des arguments des routines
+(cours_ex6.c)  
+
+cours_ex7.f90	: Partage du travail boucle DO
+(cours_ex7.c)  
+
+cours_ex8.f90	: Partage du travail boucle, REDUCTION (avec 2 threads:	export(setenv) OMP_NUM_THREADS=2( 2) )
+(cours_ex8.c)  
+
+
