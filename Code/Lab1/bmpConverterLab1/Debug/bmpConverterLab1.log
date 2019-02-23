@@ -1,0 +1,7 @@
+﻿  Source.cpp
+c:\users\user\source\repos\bmpconverterlab1\bmpconverterlab1\source.cpp(16): warning C4326: return type of 'main' should be 'int' instead of 'void'
+c:\users\user\source\repos\bmpconverterlab1\bmpconverterlab1\source.cpp(72): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\user\source\repos\bmpconverterlab1\bmpconverterlab1\source.cpp(74): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\user\source\repos\bmpconverterlab1\bmpconverterlab1\source.cpp(78): warning C4244: '=': conversion from 'float' to 'BYTE', possible loss of data
+c:\users\user\source\repos\bmpconverterlab1\bmpconverterlab1\source.cpp(79): warning C4244: '=': conversion from 'float' to 'BYTE', possible loss of data
+  bmpConverterLab1.vcxproj -> C:\Users\User\source\repos\bmpConverterLab1\Debug\bmpConverterLab1.exe
